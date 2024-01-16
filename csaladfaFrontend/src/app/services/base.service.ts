@@ -14,6 +14,6 @@ export class BaseService {
     return this.http.get(this.url+target)
   }
   public addTagok(body:any){
-    this.http.post(this.url+'csaladtagok',body)
+    return this.http.post(this.url+'csaladtagok',body)
   }
 }

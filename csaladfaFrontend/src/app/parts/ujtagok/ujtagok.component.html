@@ -1,1 +1,37 @@
-<p>ujtagok works!</p>
+<div class="card mb-5">    
+    <div class="card-body">
+      <h5 class="card-title">Új tagok felvétele</h5>
+      <div class="card-text">   
+        <div class="form-floating mb-3">
+            <input [(ngModel)]="tag.nev" type="text" class="form-control" id="nav">
+            <label for="nev">Név</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input [(ngModel)]="tag.szul_datum" type="date" class="form-control" id="szul_datum">
+            <label for="szul_datum">Születési dátum</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input [(ngModel)]="tag.szul_hely" type="text" class="form-control" id="szul_hely">
+            <label for="szul_hely">Születési hely</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input [(ngModel)]="tag.anyja_neve" type="text" class="form-control" id="anyja_neve">
+            <label for="anyja_neve">Anyja neve</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input [(ngModel)]="tag.apja_neve" type="text" class="form-control" id="apja_neve">
+            <label for="apja_neve">Apja neve</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input [(ngModel)]="tag.halal_hely" type="text" class="form-control" id="halal_hely">
+            <label for="halal_hely">Halál hely</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input [(ngModel)]="tag.halal_datum" type="date" class="form-control" id="halal_datum">
+            <label for="halal_datum">Halál hely</label>
+        </div>
+
+    </div>
+    <button (click)="kuldApi()" type="button" class="btn btn-primary">Mentés</button>
+    </div>
+  </div>
