@@ -10,14 +10,13 @@ import { CsaladtagokComponent } from './parts/csaladtagok/csaladtagok.component'
 import { HomeComponent } from './parts/home/home.component';
 import { UjtagokComponent } from './parts/ujtagok/ujtagok.component';
 import { FormsModule } from '@angular/forms';
-
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     CsaladtagokComponent,
     HomeComponent,
-    UjtagokComponent
+    UjtagokComponent,
   ],
   imports: [
     BrowserModule,
