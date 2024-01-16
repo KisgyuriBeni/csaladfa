@@ -1,3 +1,13 @@
 <div class="container mt-5">
     <!-- {{csaladtagok|json}} -->
+    <div class="row my-3">
+        <div *ngFor="let oszlop of oszlopok" class="col fw-bold">
+            {{oszlop['text']}}
+        </div>
+    </div>
+    <div *ngFor="let tag of csaladtagok" class="row my-2">
+        <div *ngFor="let oszlop of oszlopok" class="col ">
+            {{tag[oszlop.key]}}
+        </div>
+    </div>
 </div>
